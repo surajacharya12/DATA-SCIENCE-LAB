@@ -1,6 +1,6 @@
 # DATA-SCIENCE-LAB
 
-  #lab 1
+  #  lab 1
   # Code Examples in this Notebook
 
 This document provides a summary of the Python code examples present in this Jupyter notebook.

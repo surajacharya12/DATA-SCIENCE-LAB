@@ -182,3 +182,165 @@ area = area_of_circle(radius)
 print(f"The area of a circle with radius {radius} is: {area:.2f}")
 ```
 **Description:** A function to calculate the area of a circle, prompting the user for the radius and displaying the formatted result.
+
+
+# DATA-SCIENCE-LAB
+
+## Lab 2: Iterators, Generators, and Decorators (Python)
+
+This document contains **Lab 2** of the Data Science Lab. The lab is focused on understanding advanced Python concepts that help write efficient, clean, and reusable code: **Iterators, Generators, and Decorators**.
+
+---
+
+## 🎯 Lab Objectives
+
+* Understand the concept of iterators and how iteration works in Python
+* Learn how generators simplify iterator creation and improve memory efficiency
+* Understand decorators and how they modify function behavior
+* Identify the role of `for` loops in iteration
+
+---
+
+## 1️⃣ Iterator
+
+### Definition
+
+An **iterator** is an object that allows traversal through all the elements of a collection (such as a list) one by one. It follows the **Iterator Protocol**, which consists of two methods:
+
+* `__iter__()`
+* `__next__()`
+
+### Syntax Example
+
+```python
+my_list = [1, 2, 3]
+it = iter(my_list)   # Get iterator
+print(next(it))      # Get next element
+print(next(it))
+print(next(it))
+```
+
+---
+
+## 2️⃣ Generator
+
+### Definition
+
+A **generator** is a simpler and cleaner way to create iterators using a function. Instead of `return`, it uses the `yield` keyword. Generators generate values **on the fly**, making them memory-efficient.
+
+### Syntax Example
+
+```python
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+gen = my_generator()
+
+for value in gen:
+    print(value)
+```
+
+---
+
+## 3️⃣ Decorator
+
+### Definition
+
+A **decorator** is a function that takes another function as input and extends its behavior without modifying the original function. It works as a **wrapper** around the function.
+
+### Syntax Example
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Before the function")
+        func()
+        print("After the function")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+```
+
+---
+
+## 4️⃣ Is a `for` Loop an Iterator?
+
+**No.** A `for` loop is a control flow statement, not an iterator itself.
+
+However, a `for` loop internally uses an iterator. When you write:
+
+```python
+for item in my_list:
+    print(item)
+```
+
+Python automatically calls:
+
+* `iter(my_list)`
+* `next()` repeatedly until items are exhausted
+
+---
+
+## 5️⃣ Iterator vs Generator Comparison
+
+| Feature          | Iterator                                      | Generator                  |
+| ---------------- | --------------------------------------------- | -------------------------- |
+| Implementation   | Uses class with `__iter__()` and `__next__()` | Uses function with `yield` |
+| Code Complexity  | More code                                     | Less and cleaner code      |
+| State Management | Manual                                        | Automatic                  |
+| Memory Usage     | Higher                                        | Memory-efficient           |
+
+---
+
+## 6️⃣ Combined Example: Decorator with Generator
+
+This example demonstrates how **decorators and generators** can be used together in a real-world scenario.
+
+```python
+def log_status(func):
+    def wrapper(*args, **kwargs):
+        print(f"--- Starting {func.__name__} ---")
+        result = func(*args, **kwargs)
+        print(f"--- Finished {func.__name__} ---")
+        return result
+    return wrapper
+
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+@log_status
+def get_passing_students(students):
+    for student in students:
+        if student.score >= 50:
+            yield student.name
+
+classroom = [
+    Student("Ram", 90),
+    Student("Shyam", 40),
+    Student("Hari", 75)
+]
+
+for name in get_passing_students(classroom):
+    print(f"Passed: {name}")
+```
+
+---
+
+## ✅ Lab Conclusion
+
+In this lab, we studied how Python handles iteration internally and how generators and decorators help write efficient, readable, and modular code. These concepts are widely used in **data science, backend development, and large-scale Python applications**.
+
+---
+
+**Lab Number:** 2
+**Subject:** Data Science Lab
+**Topic:** Iterators, Generators, and Decorators
+

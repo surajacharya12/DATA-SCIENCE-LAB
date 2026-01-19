@@ -340,7 +340,142 @@ In this lab, we studied how Python handles iteration internally and how generato
 
 ---
 
-**Lab Number:** 2
-**Subject:** Data Science Lab
-**Topic:** Iterators, Generators, and Decorators
+
+
+
+## 📘Lab Report – Lab 3
+
+Title: OOP Concepts and File Handling in Python
+Objective
+
+The objective of this lab is to understand and demonstrate key Object-Oriented Programming (OOP) concepts such as encapsulation and inheritance, and to learn how to handle different file formats using Python. The lab also emphasizes proper documentation using markdown headers.
+
+Data Analysis Key Findings
+1. Object-Oriented Programming (OOP) Concepts Explained
+
+The notebook successfully demonstrated core OOP principles:
+
+1.1 Encapsulation
+
+The Employee class demonstrated encapsulation using private attributes:
+
+__emp_id
+
+__name
+
+__salary
+
+Access to these attributes was provided via public getter and setter methods:
+
+get_emp_id()
+
+set_salary()
+
+The section used the header:
+
+# Employee Class: Encapsulation Example
+
+1.2 Inheritance
+
+The Professor class extended the Employee class.
+
+It added specific attributes and methods:
+
+Attribute: subject
+
+Method: display_details()
+
+The section used the header:
+
+# Professor Class: Inheritance and Object Creation
+
+2. File Handling Techniques Covered
+
+The notebook demonstrated how to read and write various file formats.
+
+2.1 CSV Files
+Writing CSV
+
+Using Python's built-in csv module:
+
+Header used:
+
+# Writing CSV using Python's built-in 'csv' module
+
+
+Using Pandas:
+
+Method: to_csv(index=False)
+
+Header used:
+
+## Writing CSV using Pandas DataFrame
+
+Reading CSV
+
+Using Python's built-in csv module:
+
+Header used:
+
+# Reading CSV using Python's built-in 'csv' module
+
+
+Using Pandas:
+
+Method: pd.read_csv()
+
+Header used:
+
+# Reading CSV using Pandas DataFrame
+
+2.2 JSON Files
+
+Writing JSON data using Python’s json module.
+
+The indent=4 argument was used for readability.
+
+Header used:
+
+# Writing JSON data to a file
+
+2.3 Plain Text Files
+Writing
+
+Writing list of strings to students.txt
+
+Newline characters (\n) were used for structure.
+
+Header used:
+
+# Writing data to a plain text file
+
+Reading
+
+Reading the entire file content into a single string.
+
+Header used:
+
+### Reading data from a plain text file
+
+2.4 Excel Files (Using Pandas)
+
+A dedicated section was created:
+
+## Excel File Handling: Pandas
+
+Writing Excel
+
+Used to_excel(index=False)
+
+Header used:
+
+# Writing Excel file using Pandas
+
+Reading Excel
+
+Used pd.read_excel()
+
+Header used:
+
+# Reading Excel file using Pandas
 

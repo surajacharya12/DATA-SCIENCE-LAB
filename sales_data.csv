@@ -1,0 +1,9 @@
+order_id,customer_id,customer_name,product,category,price,quantity,city,order_date
+101,C001,Alice,Laptop,Electronics,800,1,Kathmandu,2024-01-05
+102,C002,Bob,Phone,Electronics,500,2,Lalitpur,2024-01-06
+103,C001,Alice,Mouse,Accessories,20,3,Kathmandu,2024-01-10
+104,C003,Charlie,Keyboard,Accessories,50,1,Bhaktapur,2024-02-01
+105,C002,Bob,Laptop,Electronics,800,1,Lalitpur,2024-02-05
+106,C004,David,Phone,Electronics,500,1,Kathmandu,2024-02-10
+107,C003,Charlie,Mouse,Accessories,20,2,Bhaktapur,2024-03-01
+108,C001,Alice,Keyboard,Accessories,50,1,Kathmandu,2024-03-05

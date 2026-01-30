@@ -78,3 +78,47 @@ The objective of this lab is to explore and implement CRUD (Create, Read, Update
    - Explored the advantages of serverless SQLite for local dev versus scalable NoSQL for web apps.
 
 ---
+---
+
+## 📘Lab Report – Lab 5
+**Title:** Web Scraping, REST and SOAP API Interaction
+
+**Objective:**
+The objective of this lab is to extract data from web pages using BeautifulSoup and to interact with external web services via REST (GET/POST) and SOAP APIs.
+
+**Data Analysis Key Findings:**
+1. **Web Scraping (BeautifulSoup):**
+   - Extracted structured data from Wikipedia, including infobox metadata and quote lists.
+   - Utilized both tag-based searching (`find_all`) and CSS selectors (`.select`) for targeted extraction.
+2. **REST API Interaction:**
+   - Performed GET requests to fetch and parse JSON data from remote endpoints.
+   - Demonstrated POST requests to send structured data to a server and verify responses.
+3. **SOAP API Interaction:**
+   - Utilized the `zeep` library to connect to WSDL-based web services.
+   - Executed remote procedure calls (RPC) to perform operations on an external service.
+
+---
+
+## 📘Chapter Report – Chapter 3
+**Title:** Advanced Data Preprocessing and Pre-ML Workflows
+
+**Objective:**
+The objective of this chapter is to master complex data reshaping, cleaning, and memory optimization techniques to prepare high-quality datasets for machine learning.
+
+**Data Analysis Key Findings:**
+1. **Data Reshaping (Pivot & Melt):**
+   - Transformed raw transactional data into multi-dimensional summaries using pivot tables.
+   - Restructured wide-format reports back into long-format for analytical flexibility.
+2. **Data Cleaning & Imputation:**
+   - Identified missing data metrics (counts/percentages) across features.
+   - Implemented Median, Mean, and Forward-Fill imputation strategies for numerical and time-series data.
+3. **Feature Engineering & Encoding:**
+   - Applied One-Hot and Ordinal encoding to transform categorical data for ML consumption.
+   - Implemented Feature Scaling (Normalization and Standardization) to balance numerical ranges.
+4. **Database Normalization & Reconstruction:**
+   - Simulated relational normalization by splitting flat files into distinct entity tables (Customers, Products, Orders).
+   - Reconstructed datasets using complex multi-table joins.
+5. **Optimization:**
+   - Developed memory optimization scripts to downcast datatypes and utilize categorical storage, significantly reducing RAM usage for large datasets.
+
+---

@@ -1,0 +1,5 @@
+age,salary,start_date,email
+25,50000,2023-01-10,a@test.com
+30,60000,2022-05-01,b@test.com
+,55000,,
+abc,70000,invalid,c@test.com

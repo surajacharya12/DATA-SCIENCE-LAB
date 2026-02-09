@@ -99,7 +99,7 @@ The objective of this lab is to extract data from web pages using BeautifulSoup 
 
 ---
 
-## 📘Chapter Report – Chapter 3
+## 📘Lab Report – Lab 6
 **Title:** Advanced Data Preprocessing and Pre-ML Workflows
 
 **Objective:**

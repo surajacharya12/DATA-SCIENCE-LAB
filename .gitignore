@@ -1,9 +1,8 @@
 .venv/
+venv/
 __pycache__/
 *.py[cod]
-*$py.class
+*.py.class
 .ipynb_checkpoints/
 *.db
 *.csv
-venv/
-

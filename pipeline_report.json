@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-02-28 06:22:45",
+  "kpis": {
+    "Total Revenue": "$46,299.14",
+    "Total Units Sold": "86",
+    "Total Transactions": "15",
+    "Avg Order Value": "$3,086.61",
+    "Best Month": "Feb 2024",
+    "Best Product": "Phone",
+    "Best Region": "North"
+  },
+  "monthly": {
+    "Jan 2024": {
+      "revenue": 9899.82,
+      "units": 18,
+      "transactions": 4
+    },
+    "Feb 2024": {
+      "revenue": 14299.730000000001,
+      "units": 27,
+      "transactions": 4
+    },
+    "Mar 2024": {
+      "revenue": 10999.809999999998,
+      "units": 19,
+      "transactions": 4
+    },
+    "Apr 2024": {
+      "revenue": 11099.78,
+      "units": 22,
+      "transactions": 3
+    }
+  },
+  "by_product": {
+    "Laptop": {
+      "revenue": 16999.83,
+      "units": 17
+    },
+    "Phone": {
+      "revenue": 21499.57,
+      "units": 43
+    },
+    "Tablet": {
+      "revenue": 7799.74,
+      "units": 26
+    }
+  },
+  "by_region": {
+    "North": {
+      "revenue": 14199.779999999999,
+      "units": 22
+    },
+    "South": {
+      "revenue": 12799.779999999999,
+      "units": 22
+    },
+    "East": {
+      "revenue": 11299.8,
+      "units": 20
+    },
+    "West": {
+      "revenue": 7999.780000000001,
+      "units": 22
+    }
+  }
+}

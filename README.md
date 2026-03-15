@@ -122,3 +122,42 @@ The objective of this chapter is to master complex data reshaping, cleaning, and
    - Developed memory optimization scripts to downcast datatypes and utilize categorical storage, significantly reducing RAM usage for large datasets.
 
 ---
+
+---
+
+## 📘Lab Report – Lab 12
+**Title:** End-to-End Data Pipeline Analysis
+
+**Objective:**
+The objective of this lab is to analyze a complete data pipeline implemented in Python and Streamlit, focusing on sequential stages of data processing: Ingestion, Cleaning, Transformation, Analysis, and Visualization.
+
+**Data Analysis Key Findings:**
+1. **Pipeline Architecture:**
+   - Implemented a modular 5-step workflow (Ingestion -> Cleaning -> Transformation -> Analysis -> Visualization).
+   - Validated data integrity by fixing missing values and removing logical anomalies during the cleaning phase.
+2. **Business Insights:**
+   - Calculated core KPIs: Total Revenue ($46,299.14) and Average Order Value ($3,086.61).
+   - Identified 'Phones' as the primary revenue driver despite lower unit pricing compared to Laptops.
+3. **Interactive Reporting:**
+   - Leveraged Streamlit and Plotly to create an interactive dashboard for real-time data exploration.
+
+---
+
+## 📘Lab Report – Case Study
+**Title:** Twitter Stock Market Analysis (2013 - 2022)
+
+**Objective:**
+The objective of this case study is to perform exploratory data analysis (EDA) on the historical stock performance of Twitter, Inc. from its IPO to its acquisition/delisting, using advanced visualization to communicate financial trends.
+
+**Data Analysis Key Findings:**
+1. **Historical Trends:**
+   - Analyzed 2,264 trading days, tracing price evolution from IPO stability to extreme 2021-2022 volatility.
+   - Identified $59.99 as the peak average closing price reached in 2021.
+2. **Market Volatility:**
+   - Correlated significant volume spikes with high-impact news events and acquisition rumors.
+   - Used Boxplots to visualize yearly spread, highlighting 2021-2022 as the most volatile periods.
+3. **Correlation Analysis:**
+   - Confirmed perfect linearity (1.0 correlation) between Open, High, Low, and Close prices.
+   - Demonstrated that trading volume peaks during major market recovery phases (post-2020).
+
+---

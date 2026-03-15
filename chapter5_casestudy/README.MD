@@ -29,6 +29,13 @@ The analysis followed a rigorous data science pipeline:
 
 ## Analysis Results (Findings)
 
+### Visual Overview: Master Dashboard
+![Master Dashboard](./charts/master_subplot_dashboard.png)
+*Figure 1: Comprehensive Twitter Stock Analysis Dashboard (2013-2022)*
+
+<br>
+
+
 ### 1. Market Key Performance Indicators (KPIs)
 | Metric | Value |
 | :--- | :--- |
@@ -38,7 +45,26 @@ The analysis followed a rigorous data science pipeline:
 | **Overall Average Price** | $36.00 |
 | **Average Daily Volume** | 21,751,861 shares |
 
-### 2. Yearly Price Evolution (Average Close)
+### 2. Key Visual Insights
+
+#### A. Price Evolution & Volatility
+![Price Line Chart](./charts/line_price.png)
+*Figure 2: Historical Closing Prices showing the significant growth peak in 2021.*
+
+![Yearly Volatility](./charts/seaborn_boxplot.png)
+*Figure 3: Yearly Distribution of Closing Prices, highlighting market stability in middle years vs. high volatility in 2021-2022.*
+
+#### B. Correlation & Heatmap
+![Correlation Heatmap](./charts/seaborn_heatmap.png)
+*Figure 4: Correlation Matrix showing near-perfect linear relationship between Open, High, Low, and Close metrics.*
+
+#### C. Volume Analysis
+![Volume Bar Chart](./charts/bar_volume.png)
+*Figure 5: Average Daily Trading Volume by Year.*
+
+<br>
+
+### 3. Yearly Price Evolution (Average Close)
 | Year | Average Closing Price | Market Context |
 | :--- | :--- | :--- |
 | 2013 | $49.66 | IPO Period |
@@ -47,7 +73,7 @@ The analysis followed a rigorous data science pipeline:
 | **2021** | **$59.99** | **All-Time High Year** |
 | 2022 | $41.03 | Acquisition/Delisting |
 
-### 3. Key Observations
+### 4. Key Observations
 -   **Strong Linearity:** The study confirmed a nearly 1.0 correlation between Open, High, Low, and Close prices, typical for high-liquid stocks.
 -   **Volume Spikes:** Massive volume increases were correlated with high-volatility years (2020-2022), signaling intensive investor interest during market shifts and acquisition talks.
 -   **Growth Peak:** Twitter reached its most significant growth phase in 2021, averaging nearly $60 per share before the final 2022 acquisition activity.

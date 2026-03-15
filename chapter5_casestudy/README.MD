@@ -1,57 +1,59 @@
-# Twitter Stock Market Analysis (2013 - 2022)
+# Lab Report: Twitter Stock Market Case Study Analysis
 
-## 📌 Project Overview
+## Title
+**Exploratory Data Analysis and Visualization of Twitter Stock (2013-2022)**
 
-This project is an end-to-end data science case study focused on analyzing the historical stock market performance of **Twitter, Inc. (TWTR)**. The analysis covers the period from Twitter's IPO in November 2013 until its acquisition/delisting in late 2022.
+## Objective
+The objective of this lab is to perform an end-to-end data science study on the historical stock performance of Twitter, Inc. (TWTR). The study aims to apply exploratory data analysis (EDA) techniques, identify historical trends, analyze market volatility, and communicate financial insights through structured data storytelling.
 
-The goal of this study is to demonstrate advanced data visualization techniques, exploratory data analysis (EDA), and financial storytelling using Python.
+## Theory
+Stock market analysis involves several key data processing and visualization concepts as demonstrated in this case study:
 
-## 📊 Key Research Questions
+1.  **Time-Series Analysis:** Tracking a variable (Closing Price) over time to identify long-term growth cycles and seasonal trends.
+2.  **Correlation Analysis:** Using Heatmaps to determine the statistical relationship between different market features like Open, High, Low, Close, and Volume.
+3.  **Volatility Assessment:** Utilizing Boxplots to visualize the spread and distribution of stock prices across different years, revealing periods of stability versus extreme fluctuation.
+4.  **Frequency Distribution:** Using Histograms to understand the density of stock prices and identifying the most common trading ranges.
+5.  **Multivariate Exploration:** Combining multiple visualization types (Line, Bar, Heatmap) into a unified dashboard to provide a holistic view of the company's financial health.
 
-- What are the long-term trends in Twitter’s closing price?
-- How does daily trading volume correlate with price spikes and drops?
-- What are the relationships between different market variables (Open, High, Low, Close, Volume)?
-- How has stock volatility evolved on a yearly basis?
+## Program Workflow
+The analysis followed a rigorous data science pipeline:
 
-## 📂 Dataset Description
+1.  **Data Loading:** Importing the `twitter_stock.csv` dataset containing 2,264 trading records from IPO (2013) to delisting (2022).
+2.  **Data Preprocessing:** Converting date strings to datetime objects and extracting yearly features for categorical grouping.
+3.  **Exploratory Visualization:**
+    -   **Line Charts** were used for Price Evolution.
+    -   **Bar Charts** analyzed trading Volume peaks.
+    -   **Seaborn Heatmaps** identified perfect correlations between price extremes.
+4.  **Statistical Summarization:** Calculating mean prices and volume spikes to identify significant market events.
+5.  **Dashboard Generation:** Consolidating all insights into a professional visual report.
 
-The dataset used is `twitter_stock.csv`, which contains:
+## Analysis Results (Findings)
 
-- **Date**: The trading day.
-- **Open / Close**: Opening and closing prices.
-- **High / Low**: Intraday price extremes.
-- **Adj Close**: Adjusted closing price.
-- **Volume**: Total shares traded.
+### 1. Market Key Performance Indicators (KPIs)
+| Metric | Value |
+| :--- | :--- |
+| **Total Trading Days** | 2,264 |
+| **Minimum Closing Price** | $14.01 |
+| **Maximum Closing Price** | $77.63 |
+| **Overall Average Price** | $36.00 |
+| **Average Daily Volume** | 21,751,861 shares |
 
-## 🛠️ Tech Stack & Libraries
+### 2. Yearly Price Evolution (Average Close)
+| Year | Average Closing Price | Market Context |
+| :--- | :--- | :--- |
+| 2013 | $49.66 | IPO Period |
+| 2016 | $17.57 | Historical Lows |
+| 2020 | $37.22 | Pandemic Recovery |
+| **2021** | **$59.99** | **All-Time High Year** |
+| 2022 | $41.03 | Acquisition/Delisting |
 
-- **Python 3.x**
-- **Pandas**: Data manipulation and cleaning.
-- **Matplotlib**: Primary charting and subplot creation.
-- **Seaborn**: Advanced statistical visualizations (Heatmaps, Boxplots, Pairplots).
-- **Plotly Express**: Interactive time-series exploration.
+### 3. Key Observations
+-   **Strong Linearity:** The study confirmed a nearly 1.0 correlation between Open, High, Low, and Close prices, typical for high-liquid stocks.
+-   **Volume Spikes:** Massive volume increases were correlated with high-volatility years (2020-2022), signaling intensive investor interest during market shifts and acquisition talks.
+-   **Growth Peak:** Twitter reached its most significant growth phase in 2021, averaging nearly $60 per share before the final 2022 acquisition activity.
 
-## 🖼️ Visualizations Included
+## Discussion
+The analysis demonstrates that Twitter's stock was highly sensitive to institutional news and market sentiment. The transition from the historical lows of 2016 ($17.57) to the peaks of 2021 ($59.99) shows a resilient but volatile growth trajectory. The "Cleaning and Preprocessing" phase was essential to correctly group the data by Year, which revealed that 2021 was the most successful year for shareholders in terms of valuation.
 
-1. **Price Evolution (Line Chart)**: Tracking the growth and decline of TWTR.
-2. **Trading Volume Analysis (Bar Chart)**: Identifying peak trading years.
-3. **Correlation Heatmap**: Visualizing how strongly stock features are linked.
-4. **Price Distribution (Histogram)**: Analyzing the most frequent price ranges.
-5. **Yearly Volatility (Boxplots)**: Comparing price stability across different years.
-6. **Master Subplot Dashboard**: A unified view combining all critical dimensions into a single high-resolution image.
-
-## 🚀 How to Use
-
-1. **Explore the Notebook**: Open `Twitter_Chapter5_CaseStudy.ipynb` to see the step-by-step analysis, code cells, and detailed insights.
-2. **View the Dashboard**: Open `dashboard.html` in any web browser to see the professional analytical report.
-3. **Check the Charts**: All generated static plots are saved in the `charts/` directory.
-
-## 📝 Key Insights
-
-- **High Sensitivity**: Twitter's stock shows massive volume spikes during high-volatility events (news, earnings, external acquisitions).
-- **Strong Linearity**: Open, High, Low, and Close prices are nearly perfectly correlated, as expected in high-frequency trading.
-- **Growth Cycles**: Significant growth was observed post-2020, followed by a period of extreme volatility leading up to the 2022 acquisition activity.
-
----
-
-**Developed as part of Chapter 5: Data Visualization & Storytelling | Data Science Lab**
+## Conclusion
+This case study successfully demonstrates the power of Python's data visualization ecosystem (`Matplotlib`, `Seaborn`). By transforming raw CSV data into structured charts and tables, we were able to extract the financial story of Twitter, Inc. from its public debut to its final private transition. The lab highlights that professional EDA is the foundation for any sound financial or business decision.
